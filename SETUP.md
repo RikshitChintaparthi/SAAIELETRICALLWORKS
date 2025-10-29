@@ -34,7 +34,7 @@ Create a `.env.local` file in the root directory:
 
 \`\`\`env
 # MongoDB Connection
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/admin_dashboard
+MONGODB_URI
 
 # JWT Secret (change this to a secure random string)
 JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
