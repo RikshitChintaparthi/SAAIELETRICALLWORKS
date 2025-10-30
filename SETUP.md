@@ -37,10 +37,10 @@ Create a `.env.local` file in the root directory:
 MONGODB_URI
 
 # JWT Secret (change this to a secure random string)
-JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+JWT_SECRET
 
 # Admin Password (change this to a secure password)
-ADMIN_PASSWORD=admin123
+ADMIN_PASSWORD 
 \`\`\`
 
 ### 4. Start the Development Server
@@ -52,7 +52,7 @@ The server will start at http://localhost:3000
 
 ### 5. Populate Initial Data
 1. Navigate to http://localhost:3000/admin
-2. Login with the default password: `admin123`
+2. Login with the default password:
 3. Click on the "Populate Initial Data" button in the Dashboard
 4. This will populate the database with initial services, projects, companies, and contact details from your website
 
@@ -67,8 +67,8 @@ The server will start at http://localhost:3000
 
 ### Authentication
 - **POST** `/api/auth/login` - Login with password
-  - Body: `{ "password": "admin123" }`
-  - Returns: `{ "token": "jwt-token" }`
+  - Body: `{ "password": "" }`
+  - Returns: `{ "token": "" }`
 
 ### Services
 - **GET** `/api/services` - Get all published services
